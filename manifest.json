@@ -1,0 +1,13 @@
+{
+	"files": {
+		"Readme.md": "78a753b17e02c83a1c3476e72af8a4cd03527f71c16300b26e284cabca68f765",
+		"index.js": "979eb58c1e772bbab8e2714f48a64b291986891cdadce1a6d6da0d886f364dcf",
+		"module.json": "b38a37cff3b4546ea185d120daf4127835df338e16216005e36a8cd8ba667d6a"
+	},
+	"defs": {
+		"C_START_SKILL": 7,
+		"C_USE_ITEM": 3,
+		"S_INVEN": 16,
+		"S_START_COOLTIME_ITEM": 1
+	}
+}
