@@ -77,8 +77,8 @@
   }, 
  "assassin": { 
  	"_comment" : "NINJA",
-	"useBroochOn" : [150700, 80200],
-	"useRootBeerOn" : [150700, 80200],
+	"useBroochOn" : [80200],
+	"useRootBeerOn" : [80200],
 	"useOutofCombat" : false,
 	"delay" : 0
 	}
