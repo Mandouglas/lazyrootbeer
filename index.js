@@ -2,14 +2,14 @@ String.prototype.clr = function (hexColor) { return `<font color="#${hexColor}">
 
 const skills = require('./skills');
 
-module.exports = function AutoUse(mod){
+module.exports = function AutoUse(mod){		//Adding Id´s manually if detection is fucked.
 
-let enabled = true,
-	debug = false,
-	brooch = {
-		id : 0,
+let enabled = true,							// 51028 = https://teralore.com/de/item/51028/
+	debug = false,							// 98406 = https://teralore.com/de/item/98406/
+	brooch = {								// 98405 = https://teralore.com/de/item/98405/
+		id : [51028, 98406, 98405, 98404],	// 98404 = https://teralore.com/de/item/98404/
 		cooldown : 0
-	},
+	},										// Cooldown calc should be correct nothing to change.
 	rootbeer = {
 		id : 80081,
 		amount : 0,
