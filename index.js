@@ -46,8 +46,8 @@ let enabled = true,							// 51028 = https://teralore.com/de/item/51028/
 		mod.send('C_USE_ITEM', 3, {
 			gameId: mod.game.me.gameId,
 			id: item,
-			dbid: { low: 0, high: 0, unsigned: true },
-			target: { low: 0, high: 0, unsigned: true },
+			//dbid: { low: 0, high: 0, unsigned: true },
+			//target: { low: 0, high: 0, unsigned: true },
 			amount: 1,
 			dest: { x: 0, y: 0, z: 0 },
 			loc: loc,
