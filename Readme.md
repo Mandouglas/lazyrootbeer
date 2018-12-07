@@ -1,9 +1,9 @@
-## Automatic use Brooch and Rootbeer when using certain skills.
+## Automatic use brooch and rootbeer when using certain skills.
 `Auto detects the brooch you have equipped`
 
 ## There are two sections
-* `useBroochOn`   [Currently supports: Gamble, Adrenaline Rush, Unleash, Brawler Enrage, Ninja Ults]
-* `useRootBeerOn` [Currently supports: Gamble, Adrenaline Rush, Unleash, Brawler Enrage, Ninja Ults]   
+* `useBroochOn`   [Currently supports: Gamble, Adrenaline Rush, Unleash, Brawler Enrage, Ninja Ults] etc.
+* `useRootBeerOn` [Currently supports: Gamble, Adrenaline Rush, Unleash, Brawler Enrage, Ninja Ults] etc.   
 
 `Put skills in respective field that you want to have auto use effect.`
 
@@ -18,3 +18,6 @@ and use the skill, it will print the skill id in your console.
 > `/8 debug`
 
 > `/8 help`
+
+---
+Please turn the module off with `/8 au off` if you are not playing as damage priest or mystic.
