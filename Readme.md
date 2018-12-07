@@ -1,5 +1,5 @@
 ## Automatic use brooch and rootbeer when using certain skills.
-`Auto detects the brooch you have equipped`
+`Auto detects the brooch you have equipped.`
 
 ## There are two sections
 * `useBroochOn`   [Currently supports: Gamble, Adrenaline Rush, Unleash, Brawler Enrage, Ninja Ults] etc.
