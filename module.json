@@ -1,8 +1,12 @@
 {
 	"disableAutoUpdate": false,
+	"name": "Lazyrootbeer",
+	"author": "Shalltearz",
+	"description": "No description given cause readme.",
+	"version": "Undefined",
 	"options": {
 		"niceName": "Lazyrootbeer"
 	},
-    "servers": ["https://raw.githubusercontent.com/Tera-Shiraneko/lazyrootbeer/master/"],
-    "supportUrl": "https://github.com/Tera-Shiraneko/lazyrootbeer/issues"
+	"servers": ["https://raw.githubusercontent.com/Tera-Shiraneko/lazyrootbeer/master/"],
+	"supportUrl": "https://github.com/Tera-Shiraneko/lazyrootbeer/issues"
 }
