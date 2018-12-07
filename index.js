@@ -2,14 +2,14 @@ String.prototype.clr = function (hexColor) { return `<font color="#${hexColor}">
 
 const skills = require('./skills');
 
-module.exports = function AutoUse(mod){		//Adding Id´s manually if detection is fucked.
+module.exports = function Lazyrootbeer(mod){	//Adding Id´s manually if detection is fucked.
 
-let enabled = true,							// 51028 = https://teralore.com/de/item/51028/
-	debug = false,							// 98406 = https://teralore.com/de/item/98406/
-	brooch = {								// 98405 = https://teralore.com/de/item/98405/
-		id : [51028, 98406, 98405, 98404],	// 98404 = https://teralore.com/de/item/98404/
+let enabled = true,								// 51028 = https://teralore.com/de/item/51028/
+	debug = false,								// 98406 = https://teralore.com/de/item/98406/
+	brooch = {									// 98405 = https://teralore.com/de/item/98405/
+		id : [51028, 98406, 98405, 98404],		// 98404 = https://teralore.com/de/item/98404/
 		cooldown : 0
-	},										// Cooldown calc should be correct nothing to change.
+	},											// Cooldown calc should be correct nothing to change.
 	rootbeer = {
 		id : 80081,
 		amount : 0,
@@ -25,29 +25,29 @@ let enabled = true,							// 51028 = https://teralore.com/de/item/51028/
 			arg = arg.toLowerCase();
 			if(arg === 'on'){
 				enabled = true;
-				mod.command.message('[Auto Use] Enabled.'.clr('00FF33'));
+				mod.command.message('[Lazyrootbeer] Enabled.'.clr('00FF33'));
 			}
 			else if(arg === 'off'){
 				enabled = false;
-				mod.command.message('[Auto Use] Disabled.'.clr('FF0000'));
+				mod.command.message('[Lazyrootbeer] Disabled.'.clr('FF0000'));
 			}
 			else if(arg === 'debug'){
 				debug = !debug;
-				mod.command.message(`[Auto Use] Debug Status : ${debug}`);
+				mod.command.message(`[Lazyrootbeer] Debug Status : ${debug}`);
 			}
 			else if(arg === 'help'){
-				mod.command.message('[Auto Use] Commands : debug | on | off')
+				mod.command.message('[Lazyrootbeer] Commands : debug | on | off')
 			}
 		}
-		else mod.command.message('[Auto Use] Commands : debug | on | off');
+		else mod.command.message('[Lazyrootbeer] Commands : debug | on | off');
 	});
 
 	let useItem = (item, loc, w) => {
 		mod.send('C_USE_ITEM', 3, {
 			gameId: mod.game.me.gameId,
 			id: item,
-			//dbid: { low: 0, high: 0, unsigned: true },
-			//target: { low: 0, high: 0, unsigned: true },
+			dbid: 0,
+			target: 0,
 			amount: 1,
 			dest: { x: 0, y: 0, z: 0 },
 			loc: loc,
@@ -75,7 +75,7 @@ let enabled = true,							// 51028 = https://teralore.com/de/item/51028/
     });
 
  	mod.hook('C_USE_ITEM', 3, event => {
- 		if(debug) console.log('ID of Item Used: ' + event.id);
+ 		if(debug) console.log('Item Id of your used item is: ' + event.id);
  	});
 
 	mod.hook('S_INVEN', 16, event => {
