@@ -1,8 +1,8 @@
 {
 	"files": {
-		"Readme.md": "20b37b3dab1e304a7fd1e3c54f3c7fa7938ec0ef65ecbe1b7eb65ac3d3bf7964",
+		"Readme.md": "751c82ef7ccaa42da8437602c4e742ac958bba457db40f1b3afae0a6ddecc132",
 		"index.js": "f455c4e9c7bdee281a18fa4035d960ed1ec300d7fcba666c8aeef229da7e1bd7",
-		"module.json": "b1a00eeed46db6f6f470be67f3dec309ac2971db85846d2f1ea74d89061c9de3",
+		"module.json": "ca8b18f97dc004210d7dd0f65defc8528389568b456b37b013eb4837439b8bba",
 		"skills.json": {
 			"hash": "1ceca5e3b072cd600d71cfbf13c5bc4148255e7121be529e026f803e2ad23146",
 			"overwrite": false
